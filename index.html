@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Fan | My Netflix Story</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'netflix-red': '#E50914',
+                        'netflix-black': '#141414',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .parallax-bg {
+            background-image: radial-gradient(circle at 20% 20%, rgba(229, 9, 20, 0.08), transparent 30%), radial-gradient(circle at 80% 70%, rgba(20, 20, 20, 0.15), transparent 40%);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .story-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .story-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        blockquote {
+            border-left: 4px solid #E50914;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+         blockquote:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 25px rgba(229, 9, 20, 0.2);
+        }
+        .superpower-card {
+            background-color: #1f1f1f;
+            border: 1px solid #333;
+            border-radius: 0.5rem;
+            transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .superpower-card:hover {
+            transform: translateY(-8px);
+            background-color: #2a2a2a;
+            border-color: #E50914;
+        }
+    </style>
+</head>
+<body class="bg-netflix-black antialiased">
+<div class="parallax-bg">
+    <main class="container mx-auto max-w-4xl px-6 py-16 sm:py-24 lg:py-32">
+
+        <header class="text-center mb-16 sm:mb-24 story-section">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white">My Netflix Story</h1>
+            <p class="mt-4 text-lg sm:text-xl text-gray-300">From a Small Town to Global Streaming Dreams</p>
+            <div class="mt-6 w-24 h-1 bg-netflix-red mx-auto"></div>
+        </header>
+
+        <article class="space-y-16 sm:space-y-24 text-gray-200 leading-relaxed text-lg">
+            
+            <section class="story-section">
+                <h2 class="text-2xl sm:text-3xl font-bold text-netflix-red mb-6">The First Spark</h2>
+                <p class="mb-6">I came from a small town in northern China. Back then, my childhood life in my hometown was quite simple – no internet, no phone, just a few TV channels which screened a few Chinese shows each quarter. My hunger for stories and curiosity about the world outside of my hometown made me deeply obsessed with reading and watching movies & TV on DVD.</p>
+                <p class="mb-6">I still remember my mom taking me on a 1.5-hour bus ride each month to the DVD rent store in the nearest city, because this cramped shop, squeezed between a noodle stand and a bicycle repair stall, was the only place that carried foreign language films besides Chinese films. The store owner sometimes disappeared, hunting for film DVDs from big cities and bringing them back to our small city. That’s how I started watching English films at an age when I hadn’t even started speaking English, including *Harry Potter* and *Lord of the Rings*. Many of the films became my life-long favorites that I repeatedly watched later.</p>
+                 <blockquote class="pl-6 italic text-xl text-white my-8">
+                    One day in my seventh year, I heard from the store owner that on the other side of the earth, in another country, people could use a mail-based rent service and receive movie DVDs at their door. It sounded like magic for me as a kid. That is how I first heard about Netflix.
+                </blockquote>
+                 <p>I still remember on the bus ride home, I pressed my face against the foggy window and repeated this name in my head.</p>
+            </section>
+
+            <section class="story-section">
+                <h2 class="text-2xl sm:text-3xl font-bold text-netflix-red mb-6">When Everything Clicked</h2>
+                <p class="mb-6">Starting middle school, my family finally got internet. It felt like opening a door to infinity for me. I dove headfirst into an ocean of stories from everywhere – Korean films that made me cry, French movies that made me think, Japanese animations that made me dream, British films with accents that sounded super elegant. Each story spoke a language deeper than words, connecting hearts across every boundary imaginable, and this planted something fierce in my chest: I wanted to be part of bringing more stories to more people. I didn't know how exactly. All I had was a passion for logic and discovering patterns from data, and an insatiable appetite for storytelling.</p>
+                <p class="mb-6">Then, in my final semester of high school in 2013, I stumbled across *House of Cards*, Netflix’s first original show. It made absolutely no sense that a teenager from a small Chinese city who knew nothing about American politics would be completely hooked on a political drama, especially when I thought I’d have zero interest in learning politics. I thought for weeks - how did they know I would love this?</p>
+                <blockquote class="pl-6 italic text-xl text-white my-8">
+                    I finally discovered the answer – Netflix hadn't just made a good show; they'd revolutionized how shows get made, using data to inform every casting choice, every plot twist, every character decision. They'd used mathematics to understand human hearts, and that's when the pieces clicked together like a puzzle I'd been unconsciously solving my whole life.
+                </blockquote>
+                <p>That moment lit me up - I realized my two passions weren't separate; they were meant to work together, with data helping stories find their perfect audience and stories giving data meaning and soul.</p>
+            </section>
+            
+            <section class="story-section">
+                <h2 class="text-2xl sm:text-3xl font-bold text-netflix-red mb-6">The Impossible Decision</h2>
+                <p class="mb-6">Nobody I knew had ever worked at an international company. I'd never traveled outside of my hometown; I didn't even know if we had an airport. The path was nonexistent. But I have this thing about me—when I really want something, I take complete ownership and figure it out myself.</p>
+                <p class="mb-6">So I started. My passion for logic led me to excel in my college entrance exams, ranking in the top 5% among 385,000 students, which guaranteed me a spot in a mathematics and statistics program in China. There, I chased down every professor I could, asking them questions they'd never heard before: "How could these statistical models be used in filmmaking? Do you know how Netflix does it?". They didn't have the answers. I realized that to understand how Netflix married data and creativity, I had to learn how to make a film myself. But combining these two fields was impossible in the Chinese university system.</p>
+                <p class="mb-6">I didn't tell my friends or parents what I was planning. I knew this was my own journey, and I would get it done no matter what others said. For two months, I obsessively researched how to transfer to an American university—visas, applications, funding. I mapped out every step. Arizona State University stood out for its focus on interdisciplinary studies, having both a strong film production program and a great statistics program. Three months later, I landed in Phoenix, ready to build myself from the ground up.</p>
+            </section>
+            
+            <section class="story-section">
+                <h2 class="text-2xl sm:text-3xl font-bold text-netflix-red mb-6">Building the Bridge</h2>
+                 <p class="mb-6">That first year was a complete immersion into a world I'd only seen in movies. I was a quiet girl from a small town, navigating a new culture in a second language. I quickly learned that on American film sets and in fast-paced tech environments, if you weren't assertive, your ideas would be invisible. This wasn't a one-time frustration; it was a constant challenge. I was often the only Asian female on a film project or in a technical team, and I knew I had to work differently to make my voice heard.</p>
+                 <p class="mb-6">I remember my first film shoot, a student production where I wrote the story about an Asian girl’s school life—a perspective I knew and felt was authentic. But when the production started, the student director changed the story into a familiar tale about a naughty white guy’s school life. I tried to speak up, not only as the only female crew member, but also the only Asian student in that class. But my voice came out as barely a whisper and the team, in their creative rush, never noticed they had erased one story and replaced it with another.</p>
+                 <blockquote class="pl-6 italic text-xl text-white my-8">
+                    That night, it wasn't just frustration I felt; it was a profound moment of clarity. I realized that if people with my perspective weren't in the room, or didn't have the strength to make their voices heard, their stories would simply not get told. I saw a systemic bias not born of malice, but of familiarity and inertia.
+                </blockquote>
+                <p class="mb-6">It reminded me of one of my favorite characters, Luna Lovegood from *Harry Potter.* She was often seen as odd and her beliefs were dismissed, but she never doubted the value of what she knew. She didn't try to be the loudest person in the room; she just continued her work with a quiet, unshakeable confidence in her own unique perspective.</p>
+                <p class="mb-6">I realized I didn't need to change who I was—I needed to become so good at what I did that my perspective couldn't be ignored. I promised myself I would build the skills and earn the credibility so that one day, my voice—and the stories I wanted to champion—would have undeniable weight. I relentlessly volunteered for every project, not to win arguments in the moment, but to master every aspect of the craft, building a foundation of trust and a proven record of excellence, one project at a time.</p>
+            </section>
+            
+            <section class="story-section">
+                <h2 class="text-2xl sm:text-3xl font-bold text-netflix-red mb-6">The Global Opportunity</h2>
+                <p class="mb-6">The passion I had for one day joining Netflix's team—this fire in my heart to help rebuild creative content using technology—became my motivation. It wasn't about treating a job description like a checklist; it was about using that high bar as a catalyst for my own growth. It pushed me to learn new skills when I was comfortable, to step out of my comfort zone and become a leader when I was naturally quiet. Each career move was deliberate, but I wasn't just collecting jobs; I was collecting superpowers.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
+                    <div class="superpower-card p-6">
+                        <h4 class="text-lg font-bold text-white mb-2">Technical Foundations</h4>
+                        <p class="text-gray-300 text-base">I sought roles at Fortune 500 companies and startups, building frameworks for sales analytics, developing models for demand forecasting, and creating data products that directly contributed to the organization's revenue.</p>
+                    </div>
+                     <div class="superpower-card p-6">
+                        <h4 class="text-lg font-bold text-white mb-2">Creative Soul</h4>
+                        <p class="text-gray-300 text-base">I worked with Wanda Media, presenting insights on market trends and ad campaigns to senior leadership, served at Sundance to understand audience programming, and helped smaller studios bring more Asian films to North America.</p>
+                    </div>
+                </div>
+
+                <p>This journey has given me a unique bicultural fluency—I understand both the engine of Silicon Valley and the nuanced cultural contexts of a global media landscape. This is a critical asset for a company that must bridge cultures and understand diverse consumer and advertiser behaviors in every region.</p>
+            </section>
+            
+            <section class="story-section">
+                <h2 class="text-2xl sm:text-3xl font-bold text-netflix-red mb-6">"My Dream Won't Reject Me"</h2>
+                <p class="mb-6">In a way, I feel a bit like Frodo setting out from the Shire—he thought he was just making a promise to see a friend, but that small step led him on a journey that changed his world. I started with a simple goal, but the process of pursuing it—of preparing myself for a company like Netflix—has made me into a better, more capable person than I ever thought possible. The journey has taken me further than I ever dreamed.</p>
+                <blockquote class="pl-6 italic text-xl text-white my-8">
+                    That's why I hold onto this core belief: "Even if my dream company rejected me, my dream won’t."
+                </blockquote>
+                <p class="mb-6">That phrase became my engine. The process of preparing for Netflix was making me into someone I was proud to be. It pushed me to become a better communicator when I was naturally quiet, a more strategic thinker when I was comfortable with pure analysis, and a more resilient person when obstacles seemed insurmountable. It taught me that the journey itself was the reward.</p>
+            </section>
+            
+             <section class="story-section text-center">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-6">Ready for What's Next</h2>
+                <p class="mb-6 text-xl text-gray-300">Today, as Netflix continues to reshape global entertainment, I see all the threads of my preparation converging. The technical expertise, the creative understanding, the cross-cultural fluency, the business acumen—everything I've built is pointing toward this moment.</p>
+                 <blockquote class="pl-6 italic text-xl border-l-4 border-netflix-red my-8 text-left">
+                    I'm not just looking for a job at Netflix—I'm offering to help solve some of their most interesting problems: How do you scale personalized ad experiences across radically different cultural contexts? How do you use data to inform creative decisions without losing the soul of storytelling?
+                </blockquote>
+                <p class="mb-6 text-xl text-gray-300">The seven-year-old girl who first heard about Netflix couldn't have imagined this. But every choice she made was building toward something she couldn't yet see. I'm ready for what comes next.</p>
+            </section>
+
+             <section class="story-section mt-24 pt-16 border-t border-gray-700">
+                <h2 class="text-3xl font-bold text-center text-white mb-8">My Fit with Netflix</h2>
+                <div class="text-center max-w-3xl mx-auto text-gray-300 text-lg leading-relaxed">
+                    <p>This journey has been a deliberate effort to build intensive experience on both sides of the aisle: in the logic of technology and analytics, and in the soul of creative film production. As a <strong class="text-white font-semibold">Bridge Builder</strong>, I connect these two worlds. This dual fluency extends to culture. As a <strong class="text-white font-semibold">Global Thinker</strong>, thriving in American, Chinese, Korean, and Indonesian business environments has taught me how to translate between the engine of Silicon Valley and the nuances of global markets. And as a <strong class="text-white font-semibold">Strategic Driver</strong>, my entire path has been fueled by a relentless passion for growth, turning every challenge into a new capability. I believe this unique combination of skills is my greatest strength and reflects my fit with the teams at Netflix.</p>
+                </div>
+           </section>
+
+        </article>
+
+    </main>
+</div>
+    <footer class="text-center py-8 text-gray-500 text-sm bg-netflix-black">
+        <p>&copy; 2024 Emily Fan</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.story-section');
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
+III.
